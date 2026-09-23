@@ -8,3 +8,6 @@ Taking the structure from the Basic HTML Website Project and applying various CS
 - A responsive navigation bar and well-styled contact form
 
 Full details of the project is linked here: [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
+
+# Screenshot of completed project
+![Screenshot of Personal Portfolio  Project](/images/Project_Screenshot.png)
