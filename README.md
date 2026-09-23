@@ -10,4 +10,4 @@ Taking the structure from the Basic HTML Website Project and applying various CS
 Full details of the project is linked here: [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
 
 # Screenshot of completed project
-![Screenshot of Personal Portfolio  Project](/images/Project_Screenshot.png)
+![Screenshot of Personal Portfolio Project](/images/Project_Screenshot.png)
