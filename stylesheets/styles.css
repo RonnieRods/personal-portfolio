@@ -1,0 +1,367 @@
+/* CSS RESET BELOW */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* CSS RESET ABOVE */
+
+html {
+    font-family: "DM Sans";
+    background-color: rgba(136, 48, 136, 0.507);
+    font-size: 1.2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 30px 0 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* index.html Settings */
+
+.link {
+    text-decoration: none;
+    color: purple;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: rgb(46, 10, 46);
+    transform: scale(1.5);
+    font-size: 1.3rem;
+}
+
+.link:active {
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0 100px 0;
+    border-bottom: 2px solid black;
+}
+
+.contents {
+    display: flex;
+}
+
+.contents aside:nth-child(1),
+.contents aside:nth-child(3) {
+    flex: 1 1 100px;
+}
+
+.contents aside:nth-child(2) {
+    flex: 2 1 100px;
+}
+
+.contents aside:nth-child(even) {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.contents aside:nth-child(odd) {
+    border-bottom: 2px solid black;
+}
+
+.projects h2,
+.projects p {
+    padding: 0 16px 8px 16px;
+}
+
+aside h2,
+aside h3,
+section h2 {
+    margin: 8px 0 0 0;
+}
+
+.projects .name-contain {
+    display: flex;
+    justify-content: center;
+    padding: 8px 12px;
+    border-bottom: 2px solid black;
+}
+
+.projects p:last-child {
+    border-bottom: 0;
+}
+
+.experience p:nth-child(4) {
+    border-bottom: 2px solid black;
+}
+
+.experience p:nth-child(4),
+.experience p:nth-child(7),
+.education ul {
+    padding-bottom: 12px;
+}
+
+.experience h2 {
+    padding: 0 16px 10px 16px
+}
+
+.experience h3,
+.experience p,
+.education p,
+.education h2 {
+    padding: 0 16px;
+}
+
+.review-title {
+    padding: 0 16px;
+}
+
+.review-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-cards div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 16px 8px;
+    width: 280px;
+}
+
+.review-cards div p:nth-child(2) {
+    color: rgb(114, 14, 207)
+}
+
+/* index.html Settings */
+
+/* projects.html Settings */
+
+.project-content {
+    padding: 0 30px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-list div {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.p-title {
+    border-bottom: 2px solid black;
+}
+
+.p-screenshot {
+    display: flex;
+    height: 93%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* projects.html Settings */
+
+/* articles.html Settings */
+
+.article-container {
+    padding: 0 30px;
+    flex: 1 1 83vh;
+}
+
+.article-container article {
+    margin-bottom: 20px;
+}
+
+/* articles.html Settings */
+
+/* contact.html Settings */
+
+.contact-container {
+    padding: 0 30px;
+    flex: 1 1 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form textarea {
+    margin-bottom: 16px;
+}
+
+.form button {
+    position: relative;
+    width: 20vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid #6f1386;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 600;
+    overflow: hidden;
+    transition: color 0.4s ease;
+}
+
+.form button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.form button:hover {
+    color: rgb(153, 37, 153);
+}
+
+.form button:hover::before {
+    transform: scaleX(1);
+}
+
+/* contact.html Settings */
+
+/* Mobile Layout */
+@media only screen and (max-width: 768px) {
+    /* Homepage */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title {
+        padding: 10px 0 30px 0;
+    }
+
+    .contents {
+        flex-direction: column;
+    }
+
+    .projects h2,
+    .experience h2 {
+        border-bottom: 2px solid black;
+    }
+
+    .projects h2,
+    .experience h2,
+    .education h2,
+    .review-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contents aside:nth-child(even) {
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 2px solid black;
+    }
+
+    .review-cards div {
+        width: 93%;
+    }
+
+    .project-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .project-list div {
+        width: 350px;
+        height: 350px;
+    }
+    /* Homepage */
+}
