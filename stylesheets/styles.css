@@ -148,8 +148,6 @@ section h2 {
 }
 
 .projects .name-contain {
-    display: flex;
-    justify-content: center;
     padding: 8px 12px;
     border-bottom: 2px solid black;
 }
@@ -357,6 +355,11 @@ section h2 {
     .project-content {
         display: flex;
         align-items: center;
+    }
+
+    .projects .name-contain {
+        display: flex;
+        justify-content: center;
     }
 
     .project-list div {
